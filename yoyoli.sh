@@ -19,7 +19,7 @@ test()
     if [ "$?" == "1" ]
     then
         echo -e "${rougefonce}TEST - $1:\n\tCompression FAIL"
-        EXIT = 1
+        EXIT=1
         return 1
     fi
     cmp=$(wc -c <"compressed_data")
